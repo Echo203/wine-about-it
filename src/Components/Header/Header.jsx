@@ -1,6 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+//Styles
+import "./Styles.scss";
+
 export default function Header() {
   let activeStyle = {
     color: "red",
@@ -8,8 +11,8 @@ export default function Header() {
 
   return (
     <header>
-      <div>
-        <nav>
+      <div className="container">
+        <div className="row space-between">
           <ul>
             <li>
               <NavLink
@@ -52,7 +55,7 @@ export default function Header() {
               </NavLink>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
   );

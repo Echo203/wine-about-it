@@ -1,0 +1,31 @@
+ul {
+  list-style: none;
+}
+
+header {
+  font-size: 16px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background-color: blue;
+}
+
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  width: auto;
+  height: 100%;
+
+  .row {
+    display: flex;
+    align-items: center;
+    &.space-between {
+      justify-content: space-between;
+    }
+    &.center {
+      justify-content: center;
+    }
+  }
+}

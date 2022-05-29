@@ -12,7 +12,7 @@ import Stats from "./Layouts/Stats";
 import Contact from "./Layouts/Contact";
 
 //Styles
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
