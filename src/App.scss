@@ -16,9 +16,16 @@ body {
   padding: 0;
   margin: 0;
   background-color: #f3eed9;
-  color: black;
+  color: #f3eed9;
+  h1 {
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 48px;
+  }
 }
 
 .handwritten {
   font-family: "Parisienne";
+  color: white;
 }
