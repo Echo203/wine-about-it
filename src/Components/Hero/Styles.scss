@@ -21,7 +21,15 @@
         align-items: center;
         justify-content: end;
         h1 {
-          margin-bottom: 146px;
+          margin: 1rem auto;
+        }
+        h2 {
+          margin: 1rem auto;
+          margin-bottom: 10rem;
+        }
+        p {
+          margin: 16px auto;
+          max-height: 21px;
         }
       }
       &.hero-container-right {
