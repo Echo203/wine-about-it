@@ -1,31 +1,40 @@
-ul {
-  list-style: none;
-}
-
 header {
   font-size: 16px;
   position: fixed;
   z-index: 99;
   width: 100%;
-  background-color: blue;
+  height: 10vh;
 }
 
 .container {
-  flex-grow: 1;
-  margin: 0 auto;
-  padding: 0 32px;
+  display: flex;
+  margin: auto;
   position: relative;
-  width: auto;
-  height: 100%;
+  width: 80%;
+  height: 90%;
 
   .row {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    text-decoration: none;
+    list-style: none;
+    min-width: 100%;
+    a {
+      text-decoration: none;
+      color: #f3eed9;
+    }
     &.space-between {
       justify-content: space-between;
     }
+    &.space-around {
+      justify-content: space-around;
+    }
     &.center {
       justify-content: center;
+    }
+    .active {
+      text-decoration: underline;
     }
   }
 }
