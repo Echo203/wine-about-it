@@ -1,15 +1,9 @@
-//Router
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//Router and Animations
+import { BrowserRouter as Router } from "react-router-dom";
 
 //Components
 import Header from "./Components/Header/Header";
-
-//Layouts for Pages
-import Home from "./Layouts/Home";
-import Qt from "./Layouts/Qt";
-import Maya from "./Layouts/Maya";
-import Stats from "./Layouts/Stats";
-import Contact from "./Layouts/Contact";
+import AnimatedRoutes from "./Components/AnimatedRoutes/AnimatedRoutes";
 
 //Styles
 import "./App.scss";
@@ -19,13 +13,8 @@ function App() {
     <>
       <Router>
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/qt" element={<Qt />} />
-          <Route path="/maya" element={<Maya />} />
-          <Route path="/stats" element={<Stats />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+
+        <AnimatedRoutes />
       </Router>
     </>
   );

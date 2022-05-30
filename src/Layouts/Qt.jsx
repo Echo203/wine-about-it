@@ -1,5 +1,6 @@
 import React from "react";
+import QtAbout from "../Components/QtAbout/QtAbout";
 
 export default function Qt() {
-  return <div>Qt</div>;
+  return <QtAbout />;
 }
