@@ -7,7 +7,7 @@ import "./Styles.scss";
 export default function Header() {
   return (
     <header>
-      <div className="container">
+      <div className="nav-container">
         <ul className="row space-around">
           <li className="nav-item">
             <NavLink
@@ -30,7 +30,7 @@ export default function Header() {
               to="/"
               className={({ isActive }) => (isActive ? "active" : undefined)}
             >
-              Home
+              Wine About It
             </NavLink>
           </li>
           <li className="nav-item">

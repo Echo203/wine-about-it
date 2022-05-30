@@ -5,4 +5,22 @@
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .hero-container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    .container-half {
+      width: 50%;
+      height: 100%;
+      &.hero-container-left {
+        background-color: aqua;
+      }
+      &.hero-container-right {
+        background-color: white;
+      }
+    }
+  }
 }
