@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import WineBottle from "../WineBottle/WineBottle";
-
 import "./Styles.scss";
 
 export default function QtAbout() {
