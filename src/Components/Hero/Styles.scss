@@ -23,12 +23,13 @@
         h1 {
           margin: 1rem auto;
         }
-        h2 {
-          margin: 1rem auto;
-          margin-bottom: 10rem;
+        p.authors {
+          font-size: 2em;
+          margin: -2rem auto 6rem auto;
         }
-        p {
-          margin: 16px auto;
+        p.hero-info-p {
+          font-size: 1.3em;
+          margin: 1rem auto;
           max-height: 21px;
         }
       }
