@@ -1,12 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 //Styles
 import "./Styles.scss";
 
 export default function Header() {
+  const location = useLocation();
+  const isHomepage = location.pathname === "/" ? true : false;
+
   return (
-    <header>
+    <header className={isHomepage ? undefined : "not-home"}>
       <div className="nav-container">
         <ul className="row space-around">
           <li className="nav-item">

@@ -1,6 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+//QT pics
+import qt1 from "../../Static/qt-1.jpg";
+import qt2 from "../../Static/qt-2.jpg";
+
 import "./Styles.scss";
 
 export default function QtAbout() {
@@ -13,9 +17,31 @@ export default function QtAbout() {
       className="QtAbout"
     >
       <div className="QtAbout-container">
-        <div className="QtAbout-container-left QtAbout-half"></div>
-        <div className="QtAbout-container-right QtAbout-half"></div>
+        <div className="inner-Qt">
+          <div className="content">
+            <h2>QtCinderella</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              consequatur facere, asperiores blanditiis similique dignissimos
+              ratione inventore eaque aliquam, officia qui dicta? Ad quo, ipsam
+              magni ab sed autem ducimus!
+            </p>
+            <div className="btn-row">
+              <a href="youtube.com">YouTube</a>
+            </div>
+          </div>
+          <div className="images">
+            <div className="bottom-left">
+              <img src={qt1} alt="" />
+            </div>
+            <div className="top-right">
+              <img src={qt2} alt="" />
+            </div>
+          </div>
+        </div>
       </div>
+      <div className="black-box"></div>
+      <div className="black-box overlay"></div>
     </motion.div>
   );
 }
