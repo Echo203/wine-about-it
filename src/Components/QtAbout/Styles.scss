@@ -16,9 +16,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: #f3eed9;
+      color: #1e252f;
       .content {
         width: 33%;
+        background-color: #f3eed9;
+        border: 2px solid #1e252f;
+        padding: 2rem;
         //mediaQ 10:40
         h2 {
           font-weight: 700;
@@ -26,6 +29,7 @@
           font-size: 1.8rem;
           letter-spacing: 1.5px;
           margin: 0;
+          text-align: center;
         }
         p {
           font-size: 1rem;
