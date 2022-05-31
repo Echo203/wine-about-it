@@ -29,12 +29,25 @@ export default function QtAbout() {
               magni ab sed autem ducimus!
             </p>
             <div className="media-box">
-              <div className="btn-row">
-                <a href="youtube.com">YouTube</a>
-                <p className="media-stats">....</p>
+              <div className="media-box-half">
+                <div className="btn-row">
+                  <a href="https://www.youtube.com/c/QTCinderella">Red Wines</a>
+                  <p className="media-stats">YouTube ...... 327k</p>
+                </div>
+                <div className="btn-row">
+                  <a href="https://twitter.com/qtcinderella">Blue Wines</a>
+                  <p className="media-stats">Twitter ...... 369k</p>
+                </div>
               </div>
-              <div className="btn-row">
-                <a href="youtube.com">Twitch</a>
+              <div className="media-box-half media-box-half-left">
+                <div className="btn-row">
+                  <a href="https://www.twitch.tv/qtcinderella">Sparkling</a>
+                  <p className="media-stats">Twitch ...... 737k</p>
+                </div>
+                <div className="btn-row">
+                  <a href="https://www.instagram.com/qtcinderella/">Rose</a>
+                  <p className="media-stats">Instagram ...... 155k</p>
+                </div>
               </div>
             </div>
           </div>
