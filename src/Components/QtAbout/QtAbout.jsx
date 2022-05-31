@@ -9,13 +9,14 @@ import "./Styles.scss";
 
 export default function QtAbout() {
   const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
+  const transitionDelayed = {
+    delay: 0.6,
+    duration: 1,
+    ease: [0.43, 0.13, 0.23, 0.96],
+  };
 
   return (
-    <motion.div
-      exit={{ opacity: 0, translateX: "100px" }}
-      transition={transition}
-      className="QtAbout"
-    >
+    <div className="QtAbout">
       <div className="QtAbout-container">
         <div className="inner-Qt">
           <div className="content">
@@ -31,17 +32,31 @@ export default function QtAbout() {
             </div>
           </div>
           <div className="images">
-            <div className="bottom-left">
+            <motion.div
+              initial={{ opacity: 0, y: "200px" }}
+              animate={{ opacity: 1, translateY: "-200px" }}
+              transition={transitionDelayed}
+              className="bottom-left"
+            >
               <img src={qt1} alt="" />
-            </div>
-            <div className="top-right">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: "-200px" }}
+              animate={{ opacity: 1, translateY: "200px" }}
+              transition={transitionDelayed}
+              className="top-right"
+            >
               <img src={qt2} alt="" />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-      <div className="black-box"></div>
-      <div className="black-box overlay"></div>
-    </motion.div>
+      <div
+        initial={{ opacity: 0, x: "836px" }}
+        animate={{ opacity: 1, translateX: "-836px" }}
+        transition={transition}
+        className="black-box"
+      ></div>
+    </div>
   );
 }

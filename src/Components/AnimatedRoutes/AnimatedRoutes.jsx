@@ -11,9 +11,9 @@ import Contact from "../../Layouts/Contact";
 
 export default function AnimatedRoutes() {
   const location = useLocation();
-
+  // initial={false}
   return (
-    <AnimatePresence initial={false} exitBeforeEnter>
+    <AnimatePresence exitBeforeEnter>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/qt" element={<Qt />} />
