@@ -20,15 +20,22 @@ export default function QtAbout() {
       <div className="QtAbout-container">
         <div className="inner-Qt">
           <div className="content">
-            <h2>QtCinderella</h2>
-            <p>
+            <h2 className="handwritten">QtCinderella</h2>
+            <hr className="hr-qt" />
+            <p className="about">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               consequatur facere, asperiores blanditiis similique dignissimos
               ratione inventore eaque aliquam, officia qui dicta? Ad quo, ipsam
               magni ab sed autem ducimus!
             </p>
-            <div className="btn-row">
-              <a href="youtube.com">YouTube</a>
+            <div className="media-box">
+              <div className="btn-row">
+                <a href="youtube.com">YouTube</a>
+                <p className="media-stats">....</p>
+              </div>
+              <div className="btn-row">
+                <a href="youtube.com">Twitch</a>
+              </div>
             </div>
           </div>
           <div className="images">

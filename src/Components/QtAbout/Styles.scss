@@ -25,26 +25,39 @@
         //mediaQ 10:40
         h2 {
           font-weight: 700;
-          text-transform: uppercase;
-          font-size: 1.8rem;
+          color: black;
+          font-size: 3rem;
           letter-spacing: 1.5px;
           margin: 0;
           text-align: center;
         }
-        p {
+        .hr-qt {
+          width: 80%;
+        }
+
+        p.about {
           font-size: 1rem;
           line-height: 2rem;
           font-weight: 300;
-          margin: 40px 0 72px;
+          margin: 2rem 1rem;
         }
-        .btn-row {
-          a {
-            font-weight: 700;
-            font-size: 0.875rem;
-            letter-spacing: 1.5px;
-            color: black;
-            text-transform: uppercase;
-            text-decoration: none;
+        .media-box {
+          margin: 1rem 1rem;
+          .btn-row {
+            display: flex;
+            a {
+              font-weight: 700;
+              font-size: 0.875rem;
+              letter-spacing: 1.5px;
+              color: black;
+              text-transform: uppercase;
+              text-decoration: none;
+            }
+            p.media-stats {
+              margin: 0;
+              font-weight: 700;
+              font-size: 0.875rem;
+            }
           }
         }
       }
