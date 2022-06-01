@@ -1,18 +1,27 @@
+$main: #f3eed9;
+$pink: #fedcd9;
+$black: #322d2f;
+
 header {
-  font-size: 16px;
   position: fixed;
   z-index: 99;
-  width: 100%;
+  width: 75%;
   height: 10vh;
+  max-height: 64px;
+  margin: 0 12.5%;
+  border-bottom: $black 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   a {
     text-decoration: none;
-    color: black;
+    color: $black;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 1.25em;
   }
   &.not-home {
     a {
-      color: black;
+      color: $black;
     }
   }
 }

@@ -1,19 +1,22 @@
-* {
-  box-sizing: border-box;
-  font-family: "HelveticaNeue-CondensedBold", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  font-weight: 700;
+@font-face {
+  font-family: "Parisienne";
+  src: local("Parisienne"),
+    url("./Static/Parisienne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Poppins"), url("./Static/Poppins-Regular.ttf") format("truetype");
 }
 
 $main: #f3eed9;
 $pink: #fedcd9;
 $black: #322d2f;
 
-@font-face {
-  font-family: "Parisienne";
-  src: local("Parisienne"),
-    url("./Static/Parisienne-Regular.ttf") format("truetype");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins-Regular", sans-serif;
+  font-weight: 700;
 }
 
 body {
