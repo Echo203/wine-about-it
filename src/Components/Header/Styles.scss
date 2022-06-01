@@ -6,13 +6,13 @@ header {
   height: 10vh;
   a {
     text-decoration: none;
-    color: #f3eed9;
+    color: black;
     font-weight: 500;
     font-size: 1.1em;
   }
   &.not-home {
     a {
-      color: #f3eed9;
+      color: black;
     }
   }
 }

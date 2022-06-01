@@ -6,6 +6,10 @@
   font-weight: 700;
 }
 
+$main: #f3eed9;
+$pink: #fedcd9;
+$black: #322d2f;
+
 @font-face {
   font-family: "Parisienne";
   src: local("Parisienne"),
@@ -16,11 +20,8 @@ body {
   padding: 0;
   margin: 0;
   font-size: 1em;
-  //#826056
-  //#7d6167
-  //#887D7E
-  background-image: url("./Static/bg-gradient.png");
-  color: #f3eed9;
+  background-color: $main;
+  color: $black;
   overflow: hidden;
   // h1 3.6 h2 3.0 starting
   h1 {
@@ -33,10 +34,10 @@ body {
 
 .handwritten {
   font-family: "Parisienne";
-  color: #f3eed9;
+  color: $main;
   font-weight: 300;
   &.title {
     font-weight: 600;
-    color: #df495a;
+    color: black;
   }
 }
