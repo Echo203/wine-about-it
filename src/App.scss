@@ -16,7 +16,7 @@ $black: #322d2f;
 * {
   box-sizing: border-box;
   font-family: "Poppins-Regular", sans-serif;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -39,5 +39,5 @@ body {
 .handwritten {
   font-family: "Parisienne";
   color: $black;
-  // font-weight: 300;
+  font-weight: normal;
 }

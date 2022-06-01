@@ -8,9 +8,13 @@ export default function Hero() {
 
   return (
     <div className="main-container">
-      <div className="title-container">
-        <h1 className="handwritten">Wine About It</h1>
-        <p className="handwritten">by Maya & QtCinderella</p>
+      <div className="top-positioner"></div>
+      <div className="positioner-container">
+        <div className="title-container">
+          <h1 className="handwritten">Wine About It</h1>
+          <p className="handwritten">by Maya & QtCinderella</p>
+        </div>
+        <div className="side-positioner"></div>
       </div>
     </div>
   );
