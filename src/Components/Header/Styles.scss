@@ -17,7 +17,7 @@ header {
     text-decoration: none;
     color: $black;
     // font-weight: 500;
-    font-size: 1.25em;
+    font-size: 1.23em;
   }
   &.not-home {
     a {
@@ -28,19 +28,30 @@ header {
 
 .nav-container {
   display: flex;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
-  width: 80%;
-  height: 90%;
+  width: 83%;
+  height: 100%;
 
   .row {
+    padding: 0px;
+    margin: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-decoration: none;
     list-style: none;
     min-width: 100%;
-
+    .nav-item {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      // border-left: 1px solid rgba(66, 66, 66, 0.479);
+      // border-right: 1px solid rgba(66, 66, 66, 0.479);
+    }
     &.space-between {
       justify-content: space-between;
     }
@@ -51,7 +62,7 @@ header {
       justify-content: center;
     }
     .active {
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 }

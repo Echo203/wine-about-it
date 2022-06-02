@@ -22,7 +22,7 @@ export default function Header() {
               to="qt"
               className={({ isActive }) => (isActive ? "active" : undefined)}
             >
-              QT
+              QtCinderella
             </NavLink>
           </li>
           <li className="nav-item">
@@ -35,18 +35,18 @@ export default function Header() {
           </li>
           <li className="nav-item">
             <NavLink
-              to="stats"
+              to="contact"
               className={({ isActive }) => (isActive ? "active" : undefined)}
             >
-              Stats
+              Contact Us
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink
-              to="contact"
+              to="stats"
               className={({ isActive }) => (isActive ? "active" : undefined)}
             >
-              Contact
+              Stats
             </NavLink>
           </li>
         </ul>

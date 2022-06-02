@@ -6,7 +6,14 @@
 
 @font-face {
   font-family: "Poppins-Regular";
-  src: local("Poppins"), url("./Static/Poppins-Regular.ttf") format("truetype");
+  src: local("Poppins-Regular"),
+    url("./Static/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: local("Poppins-Medium"),
+    url("./Static/Poppins-Medium.ttf") format("truetype");
 }
 
 $main: #f3eed9;
@@ -15,8 +22,8 @@ $black: #322d2f;
 
 * {
   box-sizing: border-box;
-  font-family: "Poppins-Regular", sans-serif;
-  font-weight: 500;
+  font-family: "Poppins-Medium", sans-serif;
+  font-weight: 300;
   font-size: 16px;
 }
 

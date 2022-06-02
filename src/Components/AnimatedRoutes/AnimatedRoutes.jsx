@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 
 //Layouts for Pages
 import Home from "../../Layouts/Home";
-import Qt from "../../Layouts/Qt";
+import QtCinderella from "../../Layouts/QtCinderella";
 import Maya from "../../Layouts/Maya";
 import Stats from "../../Layouts/Stats";
 import Contact from "../../Layouts/Contact";
@@ -16,10 +16,10 @@ export default function AnimatedRoutes() {
     <AnimatePresence exitBeforeEnter>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
-        <Route path="/qt" element={<Qt />} />
+        <Route path="/qt" element={<QtCinderella />} />
         <Route path="/maya" element={<Maya />} />
-        <Route path="/stats" element={<Stats />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/stats" element={<Stats />} />
       </Routes>
     </AnimatePresence>
   );
