@@ -16,6 +16,18 @@
     url("./Static/Poppins-Medium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Poppins-Light";
+  src: local("Poppins-Light"),
+    url("./Static/Poppins-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-MediumItalic";
+  src: local("Poppins-MediumItalic"),
+    url("./Static/Poppins-MediumItalic.ttf") format("truetype");
+}
+
 $main: #f3eed9;
 $pink: #fedcd9;
 $black: #322d2f;
@@ -25,6 +37,10 @@ $black: #322d2f;
   font-family: "Poppins-Medium", sans-serif;
   font-weight: 300;
   font-size: 16px;
+  p {
+    font-family: "Poppins-Light";
+    font-size: 1.23em;
+  }
 }
 
 body {
@@ -33,7 +49,6 @@ body {
   font-size: 1em;
   background-color: $main;
   color: $black;
-  overflow: hidden;
   // h1 3.6 h2 3.0 starting
   h1 {
     font-size: 5em;
