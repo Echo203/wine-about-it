@@ -68,27 +68,33 @@ export default function Hero() {
           animate={{ opacity: 1, translateY: "-100px" }}
           className="bottom-half-container"
         >
-          <div className="hero-text-container">
-            <p className="welcome-text">
-              The best podcast about lifestyle you can find on this planet.{" "}
-              <br />
-              Expand your view about life with succesfull women's perspective!
-              <br /> 'Drunk calling' your ex at girl's night?
-              <br /> We've got you on first one, second has already happened...
-            </p>
-          </div>
-          <div className="buttons-container">
-            <a href="https://www.twitch.com/maya" className="hero-button">
-              <p className="button-text">Watch live</p>
-              <TwitchIcon />
-            </a>
-            <a
-              href="https://www.youtube.com/playlist?list=PLceTTwKJQtEIgZu-iiPehB_aA31hQ9C_B"
-              className="hero-button"
-            >
-              <p className="button-text">Past VODs</p>
-              <YouTubeIcon />
-            </a>
+          <div className="content-container">
+            <div className="hero-text-container">
+              <p className="welcome-text">
+                The best podcast about lifestyle you can find on this planet.{" "}
+                <br />
+                Expand your view about life with succesfull women's perspective!
+                <br /> 'Drunk calling' your ex at girl's night?
+                <br /> We've got you on first one, second has already
+                happened...
+              </p>
+            </div>
+            <div className="next-episode-container">
+              <h2>NEW EPISODE EVERY 2ND SUNDAY</h2>
+            </div>
+            <div className="buttons-container">
+              <a href="https://www.twitch.com/maya" className="hero-button">
+                <p className="button-text">Watch live</p>
+                <TwitchIcon />
+              </a>
+              <a
+                href="https://www.youtube.com/playlist?list=PLceTTwKJQtEIgZu-iiPehB_aA31hQ9C_B"
+                className="hero-button"
+              >
+                <p className="button-text">Past VODs</p>
+                <YouTubeIcon />
+              </a>
+            </div>
           </div>
         </motion.div>
         <motion.img
