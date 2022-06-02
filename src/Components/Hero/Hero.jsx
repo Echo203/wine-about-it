@@ -78,11 +78,14 @@ export default function Hero() {
             </p>
           </div>
           <div className="buttons-container">
-            <a href="https://www.twitch.com" className="hero-button">
+            <a href="https://www.twitch.com/maya" className="hero-button">
               <p className="button-text">Watch live</p>
               <TwitchIcon />
             </a>
-            <a href="https://www.youtube.com" className="hero-button">
+            <a
+              href="https://www.youtube.com/playlist?list=PLceTTwKJQtEIgZu-iiPehB_aA31hQ9C_B"
+              className="hero-button"
+            >
               <p className="button-text">Past VODs</p>
               <YouTubeIcon />
             </a>
