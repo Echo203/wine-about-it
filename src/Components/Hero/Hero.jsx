@@ -1,5 +1,5 @@
 import React from "react";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import "./Styles.scss";
 
@@ -13,6 +13,10 @@ import MainPhoto from "../../Static/bg-removebg-outline-5-4-min — kopia cut.pn
 
 export default function Hero() {
   // const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
+  const slideIn = {
+    duration: 0.5,
+    ease: [0.25, 0.46, 0.45, 0.94],
+  };
   const color = "#322D2F";
 
   return (
@@ -43,10 +47,15 @@ export default function Hero() {
                 color={color}
               />
             </div>
-            <div className="title-container">
+            <motion.div
+              transition={slideIn}
+              initial={{ opacity: 0, y: "100px" }}
+              animate={{ opacity: 1, translateY: "-100px" }}
+              className="title-container"
+            >
               <h1 className="handwritten">Wine About It</h1>
               <p className="handwritten">by Maya & QtCinderella</p>
-            </div>
+            </motion.div>
           </div>
           <div className="vertical-33">
             <div className="orange-bar"></div>

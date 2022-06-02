@@ -1,12 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 //Styles
 import "./Styles.scss";
 
 export default function Header() {
+  const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
+
   return (
-    <header>
+    <motion.header
+      initial={{ opacity: 0, y: "-200px" }}
+      animate={{ opacity: 1, translateY: "200px" }}
+      transition={transition}
+    >
       <div className="nav-container">
         <ul className="row space-around">
           <li className="nav-item">
@@ -51,6 +58,6 @@ export default function Header() {
           </li>
         </ul>
       </div>
-    </header>
+    </motion.header>
   );
 }

@@ -1,9 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function WineBottle({ classes, color, id, height, width }) {
   return (
     <>
-      <svg
+      <motion.svg
+        transition={{
+          duration: 1,
+          ease: [0.25, 0.46, 0.45, 0.94],
+        }}
+        initial={{ x: "-1000px" }}
+        animate={{ translateX: "1000px" }}
         className={classes}
         version="1.1"
         x="0px"
@@ -44,7 +51,7 @@ export default function WineBottle({ classes, color, id, height, width }) {
         <g></g>
         <g></g>
         <g></g>
-      </svg>
+      </motion.svg>
     </>
   );
 }

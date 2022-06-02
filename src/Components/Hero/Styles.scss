@@ -116,6 +116,11 @@ $complete: #fdd8a7;
             font-family: "Poppins-MediumItalic";
           }
         }
+        .hero-button:hover {
+          transform: scale(105%);
+          transition: 0.1s;
+          transition-timing-function: ease-in-out;
+        }
       }
     }
     .hero-image {
