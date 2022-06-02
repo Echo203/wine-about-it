@@ -5,6 +5,7 @@ import "./Styles.scss";
 
 //Svgs
 import WineBottle from "../SVG components/WineBottle";
+import WineBottleThree from "../SVG components/WineBottleThree";
 import TwitchIcon from "../SVG components/TwitchIcon";
 import YouTubeIcon from "../SVG components/YouTubeIcon";
 
@@ -39,7 +40,7 @@ export default function Hero() {
                 height="141px"
                 color={color}
               />
-              <WineBottle
+              <WineBottleThree
                 classes="bottle"
                 id="bottle3"
                 width="242px"
@@ -61,7 +62,12 @@ export default function Hero() {
             <div className="orange-bar"></div>
           </div>
         </div>
-        <div className="bottom-half-container">
+        <motion.div
+          transition={slideIn}
+          initial={{ opacity: 0, y: "100px" }}
+          animate={{ opacity: 1, translateY: "-100px" }}
+          className="bottom-half-container"
+        >
           <div className="hero-text-container">
             <p className="welcome-text">
               The best podcast about lifestyle you can find on this planet.{" "}
@@ -81,8 +87,15 @@ export default function Hero() {
               <YouTubeIcon />
             </a>
           </div>
-        </div>
-        <img className="hero-image" src={MainPhoto} alt="" />
+        </motion.div>
+        <motion.img
+          transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="hero-image"
+          src={MainPhoto}
+          alt=""
+        />
       </div>
     </div>
   );
