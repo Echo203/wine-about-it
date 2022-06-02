@@ -43,7 +43,13 @@ $black: #322d2f;
   }
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   padding: 0;
   margin: 0;
   font-size: 1em;
