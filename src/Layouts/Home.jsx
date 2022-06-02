@@ -11,6 +11,7 @@ export default function Home() {
           height: "20vw",
           backgroundColor: "#fedcd9",
           borderTop: "1px solid black",
+          zIndex: 3,
         }}
       ></div>
     </>
