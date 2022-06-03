@@ -7,14 +7,20 @@ export default function WineBottleThree({ classes, color, id, height, width }) {
       <motion.svg
         transition={{
           duration: 3,
-          ease: [0.25, 0.46, 0.45, 0.94],
+          ease: [0.14, 0.32, 1, -0.16],
           times: [0, 0.33, 0.66, 1],
+          translateX: {
+            ease: [0.25, 0.46, 0.45, 0.94],
+            duration: 3,
+          },
         }}
         initial={{ x: "-1000px" }}
         animate={{
-          translateX: [null, 950, 950, 859],
-          // translateY: [null, null, null, 30, 0],
+          translateX: [null, 949, 949, 959],
+          // translateY: [null, null, 5, 0],
           rotateZ: [null, 0, 0, 90],
+          originX: "58%",
+          originY: "100%",
         }}
         className={classes}
         version="1.1"
