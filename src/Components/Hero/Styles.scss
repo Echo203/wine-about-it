@@ -49,6 +49,7 @@ $complete: #fdd8a7;
             -webkit-text-fill-color: $black;
             -webkit-text-stroke: 0.2px $black;
             paint-order: stroke fill;
+            user-select: none;
           }
         }
         .bottles-container {

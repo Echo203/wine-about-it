@@ -53,9 +53,14 @@ body {
   // h1 3.6 h2 3.0 starting
   h1 {
     font-size: 5em;
+    pointer-events: none;
+    user-select: none;
   }
   h2 {
     font-size: 2em;
+  }
+  img {
+    pointer-events: none;
   }
 }
 

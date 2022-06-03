@@ -7,7 +7,7 @@ export default function WineBottleThree({ classes, color, id, height, width }) {
       <motion.svg
         transition={{
           duration: 3,
-          ease: [0.14, 0.32, 1, -0.16],
+          ease: [0, 0.32, 0.71, 0], //[0.14, 0.32, 1, -0.16]
           times: [0, 0.33, 0.66, 1],
           translateX: {
             ease: [0.25, 0.46, 0.45, 0.94],
