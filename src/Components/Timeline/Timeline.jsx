@@ -5,6 +5,8 @@ import "./Styles.scss";
 //Components
 import WineServing from "../SVG components/WineServing";
 import EpisodeCard from "./EpisodeCard/EpisodeCard";
+import TimelineBar from "./TimelineBar/TimelineBar";
+import Handnotes from "./Handnotes/Handnotes";
 
 //Episodes images
 import sevenThumbnail from "../../Static/ep7-thumbnail.jpg";
@@ -54,8 +56,14 @@ export default function Timeline() {
           {episodesDataMock.map((ep) => {
             return (
               <div className="timeline-section-episode-container">
-                <div className="episode-card-container">
+                <div className="timeline-section-card-container">
                   <EpisodeCard />
+                </div>
+                <div className="timeline-section-bar-container">
+                  <TimelineBar />
+                </div>
+                <div className="timeline-section-handnotes-container">
+                  <Handnotes />
                 </div>
               </div>
             );
