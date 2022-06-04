@@ -50,7 +50,9 @@ export default function Timeline() {
               Episode History
             </h2>
           </div>
-          <WineServing />
+          <div className="timeline-section-image-container">
+            <WineServing />
+          </div>
         </div>
         <div className="timeline-section-bot-container">
           {episodesDataMock.map((ep) => {
