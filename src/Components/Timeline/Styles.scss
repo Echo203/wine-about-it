@@ -1,0 +1,31 @@
+$main: #f3eed9;
+$pink: #fedcd9;
+$black: #322d2f;
+$complete: #fdd8a7;
+
+.timeline-section {
+  width: 100%;
+  height: 254vh;
+  background-color: $main;
+  display: flex;
+  justify-content: space-around;
+
+  .timeline-section-container {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .timeline-section-title-container {
+      height: 28.5%;
+      display: flex;
+      align-items: center;
+      .timeline-section-title {
+        margin: 0;
+        font-size: 4em;
+        text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
