@@ -1,0 +1,29 @@
+$main: #f3eed9;
+$pink: #fedcd9;
+$black: #322d2f;
+$complete: #fdd8a7;
+
+.handnotes-container {
+  margin: 0 5.4rem;
+  height: 55%;
+  width: 100%;
+
+  .handnotes-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+  }
+
+  .handnotes-notes {
+    font-size: 2em;
+    margin: 0;
+
+    .handnotes-noteslist {
+      list-style: none;
+      padding: 0 0 0 1.3rem;
+    }
+    .handnotes-singlenote {
+      font-size: 2em;
+    }
+  }
+}

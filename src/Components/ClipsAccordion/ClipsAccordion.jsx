@@ -53,7 +53,7 @@ export default function ClipsAccordion() {
           {clipsData.map((el) => {
             return (
               <ClipCard
-                id={el.id}
+                key={el.id}
                 title={el.title}
                 episode={el.episode}
                 viewCount={el.viewCount}

@@ -55,7 +55,10 @@ export default function Timeline() {
         <div className="timeline-section-bot-container">
           {episodesDataMock.map((ep) => {
             return (
-              <div className="timeline-section-episode-container">
+              <div
+                key={ep.episodeNumber}
+                className="timeline-section-episode-container"
+              >
                 <div className="timeline-section-side-container">
                   {ep.episodeNumber % 2 ? (
                     <EpisodeCard episodeDetails={ep} />
