@@ -6,7 +6,7 @@ $complete: #fdd8a7;
 .clips-section-bg {
   width: 100vw;
   height: 60vh;
-  background-color: $pink;
+  background-color: $main; //pink
   display: flex;
   justify-content: space-around;
   border-top: 1px solid black;
@@ -29,13 +29,13 @@ $complete: #fdd8a7;
       }
     }
     .accordion-container {
-      width: 80%;
+      width: 100%;
       height: 61.1%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       .clip-card {
-        padding: 0 23px;
+        padding: 0 50px;
         background: #322d2f;
         border: 4px solid #322d2f;
         border-radius: 23px;
@@ -57,7 +57,7 @@ $complete: #fdd8a7;
           align-items: center;
           justify-content: space-around;
           img {
-            margin: 0 0.5rem 0 3rem;
+            margin: 0 0.5rem 0 6rem;
           }
         }
       }
