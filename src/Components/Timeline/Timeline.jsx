@@ -56,14 +56,22 @@ export default function Timeline() {
           {episodesDataMock.map((ep) => {
             return (
               <div className="timeline-section-episode-container">
-                <div className="timeline-section-card-container">
-                  <EpisodeCard />
+                <div className="timeline-section-side-container">
+                  {ep.episodeNumber % 2 ? (
+                    <EpisodeCard episodeDetails={ep} />
+                  ) : (
+                    <Handnotes episodeDetails={ep} />
+                  )}
                 </div>
                 <div className="timeline-section-bar-container">
                   <TimelineBar />
                 </div>
-                <div className="timeline-section-handnotes-container">
-                  <Handnotes />
+                <div className="timeline-section-side-container">
+                  {ep.episodeNumber % 2 ? (
+                    <Handnotes episodeDetails={ep} />
+                  ) : (
+                    <EpisodeCard episodeDetails={ep} />
+                  )}
                 </div>
               </div>
             );
