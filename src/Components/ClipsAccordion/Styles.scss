@@ -6,7 +6,7 @@ $complete: #fdd8a7;
 .clips-section-bg {
   width: 100vw;
   height: 60vh;
-  background-color: $main; //pink
+  background: linear-gradient($main, $complete); //pink
   display: flex;
   justify-content: space-around;
   border-top: 1px solid black;
