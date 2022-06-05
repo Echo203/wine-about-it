@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
 import "./Styles.scss";
 
@@ -11,14 +12,17 @@ export default function Handnotes({ episodeDetails }) {
       </p>
       <p className="handnotes-notes handwritten">
         Notes: <br />
-        <ul className="handnotes-noteslist">
-          {episodeDetails.notes.map((note) => {
-            return (
-              <li className="handwritten handnotes-singlenote">{`• ${note}`}</li>
-            );
-          })}
-        </ul>
       </p>
+      <ul className="handnotes-noteslist">
+        {episodeDetails.notes.map((note) => {
+          return (
+            <li
+              key={uuidv4()}
+              className="handwritten handnotes-singlenote"
+            >{`• ${note}`}</li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

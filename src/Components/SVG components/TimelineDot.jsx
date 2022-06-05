@@ -19,8 +19,8 @@ export default function TimelineDot() {
             cy="44"
             r="18"
             fill="white"
-            fill-opacity="0.2"
-            shape-rendering="crispEdges"
+            fillOpacity="0.2"
+            shapeRendering="crispEdges"
           />
         </g>
       </svg>
