@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Styles.scss";
 
 export default function EpisodeCard({ episodeDetails }) {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="episode-card">
+    <div onClick={() => setIsOpen(!isOpen)} className="episode-card">
       <div className="episode-thumbnail-container">
         <img
           className="episode-thumbnail"
