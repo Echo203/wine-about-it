@@ -1,9 +1,6 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "./Styles.scss";
-
-//Images
-// import WineBottle from "../SVG components/WineBottle";
 
 //Single clip component
 import ClipCard from "./ClipCard/ClipCard";
@@ -41,6 +38,12 @@ const clipsData = [
 ];
 
 export default function ClipsAccordion() {
+  const [highlightedClip, setHighlightedClip] = useState(null);
+
+  const highlightClip = (id) => {
+    setHighlightedClip(id);
+  };
+
   return (
     <div className="clips-section-bg">
       <div className="clips-section-container">
@@ -49,18 +52,33 @@ export default function ClipsAccordion() {
             Most Memorable Moments
           </h2>
         </div>
-        <div className="accordion-container">
-          {clipsData.map((el) => {
-            return (
-              <ClipCard
-                key={el.id}
-                title={el.title}
-                episode={el.episode}
-                viewCount={el.viewCount}
-              />
-            );
-          })}
-        </div>
+        <motion.div className="accordion-container">
+          {highlightedClip ? (
+            <ClipCard
+              id={clipsData[highlightedClip - 1].id}
+              key={clipsData[highlightedClip - 1].id}
+              title={clipsData[highlightedClip - 1].title}
+              episode={clipsData[highlightedClip - 1].episode}
+              viewCount={clipsData[highlightedClip - 1].viewCount}
+              highlightClip={highlightClip}
+              highlightedClip={highlightedClip}
+            />
+          ) : (
+            clipsData.map((el) => {
+              return (
+                <ClipCard
+                  id={el.id}
+                  key={el.id}
+                  title={el.title}
+                  episode={el.episode}
+                  viewCount={el.viewCount}
+                  highlightClip={highlightClip}
+                  highlightedClip={highlightedClip}
+                />
+              );
+            })
+          )}
+        </motion.div>
       </div>
     </div>
   );
