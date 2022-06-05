@@ -1,0 +1,16 @@
+$main: #f3eed9;
+$pink: #fedcd9;
+$black: #322d2f;
+$complete: #fdd8a7;
+
+.ClipCardPlayer-Container {
+  background-color: $black;
+  width: 100%;
+  height: 78.9%;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

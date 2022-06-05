@@ -4,7 +4,7 @@ $black: #322d2f;
 $complete: #fdd8a7;
 
 .clips-section-bg {
-  width: 100vw;
+  width: 100%;
   height: 60vh;
   background: linear-gradient($main, $complete); //pink
   display: flex;
@@ -35,6 +35,7 @@ $complete: #fdd8a7;
       flex-direction: column;
       justify-content: space-between;
       .clip-card {
+        cursor: pointer;
         padding: 0 50px;
         background: #322d2f;
         border: 4px solid #322d2f;
@@ -60,6 +61,10 @@ $complete: #fdd8a7;
             margin: 0 0.5rem 0 6rem;
           }
         }
+      }
+      #highlighted {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
       }
     }
   }
