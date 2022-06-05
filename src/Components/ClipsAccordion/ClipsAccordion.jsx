@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { v4 as uuid } from "uuid";
+
 import "./Styles.scss";
 
 //Single clip component
@@ -52,11 +53,11 @@ export default function ClipsAccordion() {
             Most Memorable Moments
           </h2>
         </div>
-        <motion.div className="accordion-container">
+        <div className="accordion-container">
           {highlightedClip ? (
             <ClipCard
               id={clipsData[highlightedClip - 1].id}
-              key={clipsData[highlightedClip - 1].id}
+              key={uuid()}
               link={clipsData[highlightedClip - 1].link}
               title={clipsData[highlightedClip - 1].title}
               episode={clipsData[highlightedClip - 1].episode}
@@ -69,7 +70,7 @@ export default function ClipsAccordion() {
               return (
                 <ClipCard
                   id={el.id}
-                  key={el.id}
+                  key={uuid()}
                   link={el.link}
                   title={el.title}
                   episode={el.episode}
@@ -80,7 +81,7 @@ export default function ClipsAccordion() {
               );
             })
           )}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

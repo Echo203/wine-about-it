@@ -34,6 +34,7 @@ $complete: #fdd8a7;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      overflow: hidden;
       .clip-card {
         cursor: pointer;
         padding: 0 50px;
@@ -41,6 +42,7 @@ $complete: #fdd8a7;
         border: 4px solid #322d2f;
         border-radius: 23px;
         height: 21.1%;
+        z-index: 2;
         display: flex;
         flex-direction: row;
         align-items: center;
