@@ -5,6 +5,7 @@ $complete: #fdd8a7;
 
 .hero {
   width: 100%;
+  position: relative;
   .main-container {
     height: 82vh;
     width: 75%;
@@ -141,13 +142,15 @@ $complete: #fdd8a7;
         }
       }
     }
-    .hero-image {
-      position: absolute;
-      z-index: 2;
-      width: 1169px;
-      height: 577px;
-      left: 751px;
-      top: 282px;
-    }
+  }
+  .hero-image {
+    position: absolute;
+    z-index: 2;
+    width: 1169px;
+    max-width: 61.43%;
+    height: 577px;
+    max-height: 72.4%;
+    right: 0%;
+    bottom: 0%;
   }
 }

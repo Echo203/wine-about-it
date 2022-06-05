@@ -97,15 +97,15 @@ export default function Hero() {
             </div>
           </div>
         </motion.div>
-        <motion.img
-          transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="hero-image"
-          src={MainPhoto}
-          alt=""
-        />
       </div>
+      <motion.img
+        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="hero-image"
+        src={MainPhoto}
+        alt=""
+      />
     </div>
   );
 }
