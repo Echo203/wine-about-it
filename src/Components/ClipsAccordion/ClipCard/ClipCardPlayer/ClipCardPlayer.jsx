@@ -11,7 +11,7 @@ export default function ClipCardPlayer({ link }) {
         width="50.625%"
         height="90%"
         type="text/html"
-        src={`${link}?autoplay=1&fs=0&iv_load_policy=3&showinfo=1&rel=0&cc_load_policy=0&start=0&end=0&vq=hd720`}
+        src={`${link}?autoplay=1&fs=0&iv_load_policy=3&showinfo=1&rel=0&cc_load_policy=0&start=0&end=0&vq=hd720&samesite=secure`}
       ></iframe>
     </div>
   );

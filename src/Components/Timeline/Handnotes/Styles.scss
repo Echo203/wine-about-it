@@ -18,9 +18,18 @@ $complete: #fdd8a7;
     font-size: 2em;
     margin: 0;
   }
+  .handnotes-notes-left {
+    font-size: 2em;
+    margin: 0 0 0 5rem;
+  }
   .handnotes-noteslist {
     list-style: none;
     padding: 0 0 0 1.3rem;
+  }
+  .handnotes-noteslist-left {
+    list-style: none;
+    padding: 0 0 0 1.3rem;
+    margin-left: 5rem;
   }
   .handnotes-singlenote {
     font-size: 2em;

@@ -3,17 +3,23 @@ import { v4 as uuidv4 } from "uuid";
 
 import "./Styles.scss";
 
-export default function Handnotes({ episodeDetails }) {
+export default function Handnotes({ episodeDetails, left }) {
   return (
     <div className="handnotes-container">
       <p className="handnotes-title handwritten">
         {`Episode #${episodeDetails.episodeNumber}`} <br />{" "}
         {`${episodeDetails.day}`}
       </p>
-      <p className="handnotes-notes handwritten">
+      <p
+        className={
+          left
+            ? "handnotes-notes-left handwritten"
+            : "handnotes-notes handwritten"
+        }
+      >
         Notes: <br />
       </p>
-      <ul className="handnotes-noteslist">
+      <ul className={left ? "handnotes-noteslist-left" : "handnotes-noteslist"}>
         {episodeDetails.notes.map((note) => {
           return (
             <li

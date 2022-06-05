@@ -65,7 +65,7 @@ export default function Timeline() {
                   {ep.episodeNumber % 2 ? (
                     <EpisodeCard episodeDetails={ep} />
                   ) : (
-                    <Handnotes episodeDetails={ep} />
+                    <Handnotes left={true} episodeDetails={ep} />
                   )}
                 </div>
                 <div className="timeline-section-bar-container">
@@ -73,7 +73,7 @@ export default function Timeline() {
                 </div>
                 <div className="timeline-section-side-container">
                   {ep.episodeNumber % 2 ? (
-                    <Handnotes episodeDetails={ep} />
+                    <Handnotes left={false} episodeDetails={ep} />
                   ) : (
                     <EpisodeCard episodeDetails={ep} />
                   )}
